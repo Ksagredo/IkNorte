@@ -47,9 +47,11 @@ header figure img /*LOGO */
 }
 
 
-nav ul
+nav ul /*EL POSITIÓN RELATIVE Y EL TOP PERMITEN QUE EL NAV SE POCISIONE SOBRE EL HEADER*/
 {
 	list-style: none;
+	position: relative;
+	top: -3.5em;
 }
 
 nav ul li 
@@ -66,35 +68,33 @@ nav ul li
 #quienes_somos:after,
 #twitter:after
 {
+	color: #216db1;
 	font-size: 2em;
 	margin-right: 1.1em;
+	opacity: 0.6;
 }
 
 #contacto:after
 {
 	content: "\e001";
-	color: black;
 	font-family: "icomoon";
 }
 
 #facebook:after
 {
 	content: "\e003";
-	color: black;
 	font-family: "icomoon";
 }
 
 #inicio:after
 {
 	content: "\e000";
-	color: black;
 	font-family: "icomoon";
 }
 
 #linkedin:after
 {
 	content: "\e002";
-	color: black;
 	font-family: "icomoon";
 
 }
@@ -102,14 +102,12 @@ nav ul li
 #productos:after
 {
 	content: "\e006";
-	color: black;
 	font-family: "icomoon"
 }
 
 #quienes_somos:after
 {
 	content: "\e005";
-	color: black;
 	font-family: "icomoon";
 
 }
@@ -117,8 +115,21 @@ nav ul li
 #twitter:after
 {
 	content: "\e004";
-	color: black;
 	font-family: "icomoon"
 }
+
+.slider
+{
+	list-style: none;
+
+
+}
+.slider img
+{
+	height: 300px;
+	width: 225px;
+}
+
+
 
 
