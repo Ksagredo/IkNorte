@@ -14,6 +14,13 @@ a
 	width: 100%;
 }
 
+article #img img /*IMG PRODUCTO*/
+{
+	float: left;
+	padding: 4.5em 1em;
+	width: 40%;
+}
+
 body 
 {
 	background:white;
@@ -34,6 +41,14 @@ div article
 	text-align: justify;
 	top: -3em;
 
+}
+
+figcaption
+{
+	font-size: 0.9em;
+	float: right;
+	padding: 1em 1em;
+	width: 50%
 }
 
 footer 
@@ -129,6 +144,7 @@ ul
 	font-family: "icomoon";
 }
 
+
 #inicio:after
 {
 	content: "\e000";
@@ -168,6 +184,15 @@ ul
 	color: #216db1;
 
 }
+.agregar
+{
+	background: #e9f3fa;
+	border-radius: 0.5em;
+	color: black;
+	margin-right: 1em;
+	margin-left: 16em;
+	text-decoration: none;
+}
 
 .text
 {
@@ -175,7 +200,6 @@ ul
 	border-radius: 0.2em;
 	color: #216db1;
 }
-
 
 
 .panel
@@ -186,7 +210,69 @@ ul
 
 }
 
+.producto
+{
+	border:solid red 3px;
+	float: right;
+	margin-right: 2em;
+	padding-right: 0.1em;
+	width: 50%;
+}
+.ver
+{
+	background: #e9f3fa;
+	border-radius: 0.5em;
+	color: black;
+	margin-right: 1em;
+	margin-left: 10em;
+	text-decoration: none;
+}
 
+/*PRUEBA*/
 
+#images {
+    width: 400px;
+    float: center;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;/*AGREGADA*/
+    margin: 20px auto;
+}
+#images img {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: -400px;
+    z-index: 1;
+    opacity: 0;
+    transition: all linear 500ms;
+    -o-transition: all linear 500ms;
+    -moz-transition: all linear 500ms;
+    -webkit-transition: all linear 500ms;
+}
+#images img:target {
+    left: 0;
+    z-index: 9;
+    opacity: 1;
+}
+#images img:first-child {
+    left: 0;
+}
 
+#slider
+{
+	 margin: 0 14em;
+}
 
+#slider a {
+    text-decoration: none;
+    background: #E3F1FA;
+    border: 1px solid #C6E4F2;
+    padding: 4px 6px;
+    color: #222;
+}
+#slider a:hover {
+    background: #C6E4F2;
+}
